@@ -1,0 +1,26 @@
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link rel="stylesheet" href="/docs.css">
+  <script src="/docs.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href='/'>Ketchup</a>
+  </header>
+  <div id='app'>
+    <div class='navigation'>
+      <iframe onload="addIFrameListeners()" src="/nav"></iframe>
+    </div>
+    <div class='content'>
+      <div class='content--inner'>
+        <h1>{{.title}}</h1>
+        <div class='content--body'>{{.content}}</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

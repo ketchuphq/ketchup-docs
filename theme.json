@@ -1,0 +1,7 @@
+{
+  "name": "ketchup-docs",
+  "templates": {
+    "nav.html": {},
+    "page.html": {}
+  }
+}

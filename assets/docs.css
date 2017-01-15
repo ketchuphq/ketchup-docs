@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box
+}
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #333;
+}
+
+html, body, #app, .container {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.wow {
+  color: #bc3e4d;
+  padding-left: 5px;
+}
+
+#home .header, .nav a {
+  color: white;
+  text-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.nav {
+  position: absolute;
+  top: 20px;
+  right: 15%;
+}
+
+.nav a {
+  font-size: 14px;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.nav a:hover::after {
+  content: '!';
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 2px;
+  color: #bc3e4d;
+  font-weight: bold;
+}
+
+#home .header {
+  height: 100%;
+  background: #bc3e4d;
+  background-image: url(https://unsplash.it/g/1024/768/?random);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home .header-title {
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+
+#home .content {
+  max-width: 720px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#home .content-box {
+  float: left;
+  width: 50%;
+  padding: 15px;
+  min-width: 300px;
+}
+
+#home .content-box p {
+  line-height: 1.6;
+  font-size: 14px;
+  color: #555;
+}
+
+#home .content-box h2 {
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  width: 920px;
+}
+
+header {
+  padding: 10px 28px;
+  color: white;
+  border-bottom: 4px solid #333;
+  font-family: 'Permanent Marker', sans-serif;
+  background: #bc3e4d;
+  letter-spacing: 1px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+#app {
+  display: flex;
+}
+
+#app .content {
+  flex-grow: 1;
+  padding-left: 25px;
+}
+
+#app .content .content--inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+#app .content h1 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+
+#app .content h2 {
+  font-size: 20px;
+}
+
+.section-title {
+  padding: 10px 15px;
+}
+
+.navigation {
+  border-right: 1px solid #eee;
+}
+
+.navigation iframe {
+  border: 0;
+  height: 100%;
+  width: 200px;
+  outline: 0;
+}
+
+#nav {
+  padding: 10px;
+  align-self: stretch;
+  font-size: 14px;
+}
+
+#nav ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+#nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 30px;
+}
+
+#nav h2, #nav li a {
+  padding: 10px 15px;
+  margin: 0;
+}
+
+#nav h2 {
+  font-size: 16px
+}
+
+#nav a {
+  color: #555;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+}
+
+#nav li a {
+  font-size: 14px;
+  height: 100%;
+}
+
+#nav a:hover {
+  color: #81BAD5;
+}
+
+.footer {
+  margin: 30px auto 0;
+  padding: 30px 0 60px;
+  text-align: center;
+  font-size: 12px;
+  border-top: 1px solid #ccc;
+  opacity: 0.5;
+  max-width: 720px;
+}
