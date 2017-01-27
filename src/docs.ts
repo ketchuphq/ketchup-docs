@@ -15,7 +15,7 @@ function loadPage(path: string) {
   fetch(`/api/v1/pages/${route.pageUuid}`)
     .then(data => data.json())
     .then((page: any) => {
-      document.querySelector(".content--inner > h1").innerHTML = page.name
+      document.querySelector(".content--inner > h1").innerHTML = page.title
       document.querySelector('.content--body').innerHTML = page.contents[0].value
     })
     .then(() => {

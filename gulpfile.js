@@ -5,9 +5,8 @@ var webpack = require('webpack')
 gulp.task('js', (cb) => {
   webpack({
     entry: {
-      docs: ['whatwg-fetch', 'vendor.js', 'docs.tsx']
+      docs: ['whatwg-fetch', 'vendor.js', 'docs.ts']
     },
-    // devtool: 'source-map',
     output: {
       filename: '[name].js',
       path: 'assets',
