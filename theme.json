@@ -1,7 +1,14 @@
 {
   "name": "ketchup-docs",
   "templates": {
-    "nav.html": {},
+    "nav.html": {
+      "placeholders": [{
+        "key": "content",
+        "text": {
+          "type": "markdown"
+        }
+      }]
+    },
     "page.html": {}
   }
 }
