@@ -39,7 +39,7 @@ gulp.task('js', (cb) => {
 });
 
 gulp.task('js:watch', () =>
-  gulp.watch('src/*.tsx', ['js'])
+  gulp.watch('src/*.ts', ['js'])
 );
 
 gulp.task('watch', ['js', 'js:watch']);
