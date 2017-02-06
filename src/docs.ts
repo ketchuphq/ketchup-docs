@@ -10,13 +10,14 @@ fetch('/api/v1/routes')
 function loadPage(path: string) {
   let route = routeMap[path]
   if (!route) {
+    document.location.href = path
     return
   }
-  fetch(`/api/v1/pages/${route.pageUuid}`)
+  fetch(`/api/v1/pages/${route.pageUuid}/contents`)
     .then(data => data.json())
     .then((page: any) => {
       document.querySelector(".content--inner > h1").innerHTML = page.title
-      document.querySelector('.content--body').innerHTML = page.contents[0].value
+      document.querySelector('.content--body').innerHTML = page.content
     })
     .then(() => {
       window.history.pushState(null, '', path)
