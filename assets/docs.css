@@ -44,12 +44,13 @@ html, body, #app, .container {
 
 .content .content--body p {
   line-height: 1.6;
-  font-size: 14px;
+  font-size: 16px;
   color: #555;
 }
 
 .content .content--body h2 {
   font-size: 20px;
+  margin-top: 30px;
 }
 
 .content .content--body pre {
@@ -100,8 +101,7 @@ header a {
 }
 
 #app .content h1 {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
+  margin: 30px 0 20px;
   font-size: 24px;
 }
 
