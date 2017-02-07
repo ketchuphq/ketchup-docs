@@ -53,6 +53,20 @@ html, body, #app, .container {
   font-size: 20px;
 }
 
+.content .content--body pre {
+  background: #444;
+  padding: 35px
+}
+
+.content .content--body code {
+  font-family: menlo, 'Lucida Console', monospace;
+  color: firebrick;
+}
+
+.content .content--body pre code {
+  color: white
+}
+
 .container {
   display: flex;
   width: 920px;
