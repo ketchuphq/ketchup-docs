@@ -13,7 +13,6 @@ html, body {
 html, body, #app, .container {
   margin: 0;
   padding: 0;
-  height: 100%;
   width: 100%;
 }
 
@@ -116,6 +115,7 @@ header a {
 
 .navigation {
   border-right: 1px solid #eee;
+  align-self: stretch;
 }
 
 .navigation iframe {
