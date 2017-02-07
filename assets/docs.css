@@ -16,30 +16,9 @@ html, body, #app, .container {
   width: 100%;
 }
 
-.content .header, .nav a {
+.content .header {
   color: white;
   text-shadow: 0 0 8px rgba(0,0,0,0.2);
-}
-
-.nav {
-  position: absolute;
-  top: 20px;
-  right: 15%;
-}
-
-.nav a {
-  font-size: 14px;
-  text-decoration: none;
-  padding: 15px;
-}
-
-.nav a:hover::after {
-  content: '!';
-  position: absolute;
-  margin-top: 2px;
-  margin-left: 2px;
-  color: #bc3e4d;
-  font-weight: bold;
 }
 
 .content .content--body p {
@@ -94,7 +73,7 @@ header a {
 
 #app .content {
   flex-grow: 1;
-  padding-left: 25px;
+  padding: 0 25px;
 }
 
 #app .content .content--inner {
