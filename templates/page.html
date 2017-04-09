@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Bitter:400,700" rel="stylesheet">
   <link rel="stylesheet" href="/docs.css">
   <script src="/docs.js"></script>
 </head>
@@ -12,14 +12,19 @@
   </header>
   <div id='app'>
     <div class='navigation'>
-      <iframe onload="addIFrameListeners()" src="/nav"></iframe>
+      <div id='nav'></div>
     </div>
     <div class='content'>
-      <div class='content--inner'>
-        <div class='content--body'>{{.content}}</div>
+      <div class='content__inner'>
+        <div class='content__inner__body'>{{.content}}</div>
       </div>
     </div>
+    <div class='right-pad'></div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css" />
+  <script>hljs.initHighlightingOnLoad();</script>
 </body>
 
 </html>

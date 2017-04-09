@@ -10,47 +10,25 @@ html, body {
   color: #333;
 }
 
-html, body, #app, .container {
+h1, h2, h3 {
+  color: #233237;
+  color: #374F57;
+  font-family: 'Bitter'; /* add more fallback */
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h3 code {
+  font-weight: 400;
+  padding: 0 10px;
+}
+
+html, body, #app {
   margin: 0;
   padding: 0;
   width: 100%;
-}
-
-.content .header {
-  color: white;
-  text-shadow: 0 0 8px rgba(0,0,0,0.2);
-}
-
-.content .content--body p {
-  line-height: 1.6;
-  font-size: 16px;
-  color: #555;
-}
-
-.content .content--body h2 {
-  font-size: 20px;
-  margin-top: 30px;
-}
-
-.content .content--body pre {
-  background: #444;
-  padding: 35px;
-  margin: 25px 0;
-}
-
-.content .content--body code {
-  font-family: menlo, 'Lucida Console', monospace;
-  color: firebrick;
-}
-
-.content .content--body pre code {
-  color: white;
-  line-height: 1.3;
-}
-
-.container {
-  display: flex;
-  width: 920px;
 }
 
 header {
@@ -74,29 +52,13 @@ header a {
 #app .content {
   flex-grow: 1;
   padding: 0 25px;
-}
-
-#app .content .content--inner {
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-#app .content h1 {
-  margin: 30px 0 20px;
-  font-size: 24px;
-}
-
-#app .content h2 {
-  font-size: 20px;
-}
-
-.section-title {
-  padding: 10px 15px;
+  min-width: 200px;
 }
 
 .navigation {
   border-right: 1px solid #eee;
   align-self: stretch;
+  min-width: 180px;
 }
 
 .navigation iframe {
@@ -106,10 +68,141 @@ header a {
   outline: 0;
 }
 
+.content h1 {
+  margin: 30px 0 20px;
+}
+
+.content .header {
+  color: white;
+  text-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.content__inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.content__inner__body #toc {
+  font-size: 0.7em;
+  padding-left: 20px;
+  border-left: 4px solid #374F57;
+  margin-bottom: 15px;
+  background: #f0f0f0;
+  padding: 8px 20px;
+}
+
+.content__inner__body #toc a {
+  color: #333;
+}
+
+.content__inner__body #toc h2,
+.content__inner__body #toc h3 {
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.content__inner__body #toc h2 {
+  border-bottom: none;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.content__inner__body #toc h3 {
+  margin: 8px 0 8px 30px;
+  font-weight: normal;
+}
+
+.content__inner__body p {
+  line-height: 1.6;
+  font-size: 16px;
+  color: #555;
+}
+
+.content__inner__body a {
+  text-decoration: none;
+  color: #81BAD5;
+}
+
+.content__inner__body a:hover {
+  text-decoration: underline;
+}
+
+.content__inner__body h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 8px;
+}
+
+.content__inner__body ul li {
+  line-height: 1.6;
+}
+
+.content__inner__body pre {
+  margin: 25px 0;
+}
+
+.content__inner__body code {
+  font-family: menlo, 'Lucida Console', monospace;
+  color: firebrick;
+}
+
+.content__inner__body h2 code, .content__inner__body h3 code {
+  font-family: menlo, 'Lucida Console', monospace;
+  color: white;
+  background: #374F57;
+  padding: 0.2em 0.4em;
+  font-size: 0.85em;
+  top: -0.1em;
+  position: relative;
+  border-radius: 2px;
+}
+
+.content__inner__body pre code {
+  background: #3b3f48;
+  display: block;
+  padding: 35px;
+  color: white;
+  line-height: 1.3;
+}
+
+.note {
+  background: #feffd6;
+  padding: 15px 18px;
+  font-size: 0.8em;
+}
+
+.note h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.note > *:first-child {
+  margin-top: 0;
+}
+
+.note > *:last-child {
+  margin-bottom: 0;
+}
+
+code.language-json.hljs {
+  color: #ccc;
+}
+
+.right-pad {
+  max-width: 200px;
+  flex-grow: 1;
+}
+
+/* nav page */
+
 #nav {
   padding: 10px;
   align-self: stretch;
-  font-size: 14px;
 }
 
 #nav ul {
@@ -122,17 +215,16 @@ header a {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 200px;
-  height: 30px;
+  width: 100%;
 }
 
 #nav h2, #nav li a {
-  padding: 10px 15px;
+  padding: 6px 15px;
   margin: 0;
 }
 
 #nav h2 {
-  font-size: 16px
+  font-size: 18px
 }
 
 #nav a {
@@ -140,11 +232,6 @@ header a {
   width: 100%;
   display: block;
   text-decoration: none;
-}
-
-#nav li a {
-  font-size: 14px;
-  height: 100%;
 }
 
 #nav a:hover {
