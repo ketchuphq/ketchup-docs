@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "semicolon": [
+      "always"
+    ],
+    "no-console": [
+      true,
+      "log",
+      "warn"
+    ],
+    "trailing-comma": [
+      true,
+      "never"
+    ],
+    "no-unused-variable": true,
+    "arrow-parens": true
+  }
+}

@@ -9,6 +9,7 @@
     "promise-polyfill": "^6.0.2",
     "source-map-loader": "^0.1.6",
     "ts-loader": "^2.0.0",
+    "tslint": "^5.0.0",
     "typescript": "^2.1.5",
     "webpack": "^2.2.0",
     "webpack-stream": "^3.2.0",
