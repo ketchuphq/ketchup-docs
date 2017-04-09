@@ -1,35 +1,14 @@
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var webpack = require('webpack')
+var webpackProdConfig = require('./webpack.config')
+var webpackDevConfig = require('./webpack.dev.config')
+
+let production = gutil.env.production
 
 gulp.task('js', (cb) => {
-  webpack({
-    entry: {
-      docs: ['whatwg-fetch', 'vendor.js', 'docs.ts']
-    },
-    output: {
-      filename: '[name].js',
-      path: 'assets',
-    },
-    resolve: {
-      extensions: ['.tsx', '.ts', '.js'],
-      modules: ['src', 'node_modules']
-    },
-    module: {
-      rules: [
-        { test: /\.jsx?$/, loader: 'source-map-loader', enforce: 'pre' },
-        { test: /\.tsx?$/, loader: 'ts-loader' }
-      ],
-    },
-    externals: {
-      'hljs': 'hljs',
-    },
-    plugins: [
-      new webpack.optimize.UglifyJsPlugin({
-        compress: { warnings: false },
-      })
-    ]
-  }, (err, stats) => {
+  let config = production ? webpackProdConfig : webpackDevConfig;
+  webpack(config, (err, stats) => {
     if (err) {
       throw new gutil.PluginError('webpack', err)
     }
@@ -46,4 +25,6 @@ gulp.task('js:watch', () =>
 );
 
 gulp.task('watch', ['js', 'js:watch']);
+
+// run gulp --production to compile production build.
 gulp.task('default', ['js']);
