@@ -21,6 +21,9 @@ gulp.task('js', (cb) => {
         { test: /\.tsx?$/, loader: 'ts-loader' }
       ],
     },
+    externals: {
+      'hljs': 'hljs',
+    },
     plugins: [
       new webpack.optimize.UglifyJsPlugin({
         compress: { warnings: false },
