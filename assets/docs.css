@@ -11,7 +11,6 @@ html, body {
 }
 
 h1, h2, h3 {
-  color: #233237;
   color: #374F57;
 }
 
@@ -116,6 +115,10 @@ header a {
   font-weight: normal;
 }
 
+.content__inner__body #toc code {
+  font-size: 0.95em;
+}
+
 .content__inner__body p {
   line-height: 1.6;
   font-size: 16px;
@@ -153,13 +156,10 @@ header a {
 
 .content__inner__body h2 code, .content__inner__body h3 code {
   font-family: menlo, 'Lucida Console', monospace;
-  color: white;
-  background: #374F57;
-  padding: 0.2em 0.4em;
-  font-size: 0.85em;
-  top: -0.1em;
-  position: relative;
-  border-radius: 2px;
+  padding: 0.2em 0;
+  color: #374F57;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 .content__inner__body pre code {
