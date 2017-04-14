@@ -119,10 +119,15 @@ header a {
   font-size: 0.95em;
 }
 
-.content__inner__body p {
+.content__inner__body p,
+.content__inner__body li {
   line-height: 1.6;
   font-size: 16px;
   color: #555;
+}
+
+.content__inner__body li {
+  padding-bottom: 6px
 }
 
 .content__inner__body a {
