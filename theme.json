@@ -9,6 +9,13 @@
         }
       }]
     },
-    "page.html": {}
+    "page.html": {
+      "placeholders": [{
+        "key": "content",
+        "text": {
+          "type": "markdown"
+        }
+      }]
+    }
   }
 }
