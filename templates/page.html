@@ -2,14 +2,16 @@
 
 <head>
   <link rel="stylesheet" href="/docs.css">
-  <script src="/docs.js"></script>
+  <meta name='HandheldFriendly' content='True'>
+  <meta name='MobileOptimized' content='320'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 </head>
 
 <body>
   <header>
     <a href='/'>Ketchup</a>
   </header>
-  <div id='app'>
+  <div id='app-container'>
     <div class='navigation'>
       <div id='nav'></div>
     </div>
@@ -24,6 +26,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/typescript.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mithril/1.1.1/mithril.min.js"></script>
+  <script src="/docs.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

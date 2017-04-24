@@ -3,16 +3,16 @@
     "build": "gulp"
   },
   "devDependencies": {
-    "@types/whatwg-fetch": "0.0.33",
-    "expose-loader": "^0.7.1",
+    "@types/mithril": "^1.1.1",
+    "expose-loader": "^0.7.3",
     "gulp": "^3.9.1",
     "promise-polyfill": "^6.0.2",
-    "source-map-loader": "^0.1.6",
-    "ts-loader": "^2.0.0",
-    "tslint": "^5.0.0",
-    "typescript": "^2.1.5",
-    "webpack": "^2.2.0",
+    "source-map-loader": "^0.2.1",
+    "ts-loader": "^2.0.3",
+    "tslint": "^5.1.0",
+    "typescript": "^2.2.2",
+    "webpack": "^2.4.1",
     "webpack-stream": "^3.2.0",
-    "whatwg-fetch": "^2.0.2"
+    "whatwg-fetch": "^2.0.3"
   }
 }

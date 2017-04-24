@@ -10,9 +10,6 @@
       "scripthost"
     ],
     "noUnusedParameters": true,
-    "noUnusedLocals": true,
-    "types": [
-      "@types/whatwg-fetch"
-    ]
+    "noUnusedLocals": true
   }
 }

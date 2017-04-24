@@ -5,8 +5,7 @@ module.exports = {
     docs: ['whatwg-fetch', 'vendor.js', 'docs.ts']
   },
   output: {
-    filename: '[name].js',
-    path: 'assets',
+    filename: 'assets/[name].js',
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
@@ -19,6 +18,7 @@ module.exports = {
   },
   externals: {
     'hljs': 'hljs',
+    'mithril': 'm'
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
