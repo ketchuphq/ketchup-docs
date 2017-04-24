@@ -169,6 +169,17 @@ header a {
   border-radius: 2px;
 }
 
+.content__inner__body table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.content__inner__body th,
+.content__inner__body td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
 .note {
   background: #feffd6;
   padding: 15px 18px;
