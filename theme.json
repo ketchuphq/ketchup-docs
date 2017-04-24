@@ -1,14 +1,6 @@
 {
   "name": "ketchup-docs",
   "templates": {
-    "nav.html": {
-      "placeholders": [{
-        "key": "content",
-        "text": {
-          "type": "markdown"
-        }
-      }]
-    },
     "page.html": {
       "placeholders": [{
         "key": "content",
