@@ -121,7 +121,11 @@ header a {
 }
 
 .content__inner__body li {
-  padding-bottom: 6px
+  padding-bottom: 6px;
+}
+
+.content__inner__body img {
+  max-width: 100%;
 }
 
 .content__inner__body a {
