@@ -110,6 +110,7 @@ header a {
 
 .content__inner__body #toc code {
   font-size: 0.95em;
+  white-space: pre;
 }
 
 .content__inner__body p,
