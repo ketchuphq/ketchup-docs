@@ -1,5 +1,15 @@
 {
   "name": "ketchup-docs",
+  "package": {
+    "type": "theme",
+    "name": "Ketchup Documentation",
+    "authors": [{"github": "octavore"}],
+    "description": "Ketchup Docs theme",
+    "homepage": "https://github.com/ketchuphq/ketchup-docs",
+    "vcs_url": "https://github.com/ketchuphq/ketchup-docs.git",
+    "screenshot_urls": [],
+    "ketchup_version": ">=0.3.0"
+  },
   "templates": {
     "page.html": {
       "placeholders": [{
